@@ -33,10 +33,10 @@ function Header({ toggleSidebar }) {
       <p className={`${logoBrand} m-0 ms-5`}>
         Sale Link:{" "}
         <a
-          href="http://localhost:5173/#home"
+          href="http://localhost:5173"
           className="text-decoration-none text-white"
         >
-          http://localhost:5173/#home
+          http://localhost:5173
         </a>
       </p>
       <Navbar.Collapse className="justify-content-end">
