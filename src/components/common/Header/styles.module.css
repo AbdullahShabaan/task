@@ -1,6 +1,7 @@
 .headerBackground {
   background-color: #0a4b8b;
   color: white;
+  display: flex;
 }
 .toggleIcon {
   cursor: pointer;

@@ -1,6 +1,26 @@
 body {
   background-color: #f3f7f8 !important;
 }
+/* Navbar */
+.navBarCollapse {
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .navBarCollapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+.navBarCollapse {
+  flex: initial;
+}
+.navbarToggeler {
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Navbar */
 /* Start Side Bar Accordination */
 .accordion-item {
   border: none !important;
@@ -53,7 +73,7 @@ body {
   .add-partner {
     margin-top: 50px;
   }
-  ._logoBrand_1iozz_27 {
+  .logoLink {
     display: none;
   }
 }

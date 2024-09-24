@@ -9,7 +9,7 @@ const { sideBar, sideBarLinks, sideBarItems, sideBarToggle } = styles;
 function Sidebar({ items, isOpen }) {
   return (
     <div
-      className={`sidebar ${isOpen ? "open" : "closed"} ${sideBar} vh-100`}
+      className={`m-0 sidebar ${isOpen ? "open" : "closed"} ${sideBar} vh-100`}
       style={{
         width: isOpen ? "280px" : "0",
         transition: "width 0.3s ease",
