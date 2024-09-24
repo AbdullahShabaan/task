@@ -1,0 +1,14 @@
+.formBackground {
+  border: 1px solid #ddd !important;
+}
+.formStepperTitle {
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+}
+.formBtn {
+  background-color: #084b93;
+}
+.formBtn:hover {
+  background-color: #1e558f !important;
+  color: white !important;
+}

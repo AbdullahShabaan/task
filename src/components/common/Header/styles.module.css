@@ -1,0 +1,25 @@
+.headerBackground {
+  background-color: #0a4b8b;
+  color: white;
+}
+.toggleIcon {
+  cursor: pointer;
+}
+
+.navbarBrand {
+  width: 110px;
+  font-size: 16px !important;
+}
+
+.logoBrand {
+  font-weight: bold;
+}
+
+.logoutBtn {
+  font-size: 12px !important;
+  opacity: 0.6;
+}
+.userName {
+  font-size: 13px;
+  font-weight: 400;
+}

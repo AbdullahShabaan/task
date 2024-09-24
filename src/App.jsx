@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/common/Header/Header";
+import Sidebar from "./components/common/Sidebar/Sidebar";
+import AddPartner from "./pages/AddPartner";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(true);
 
+  const sidebarItems = [
+    { label: "Dashboard", icon: "bi bi-building-dash", link: "#" },
+    { label: "Partners List", icon: "bi bi-person-lines-fill", link: "#" },
+    { label: "Tree", icon: "bi bi-person-lines-fill", link: "#" },
+    { label: "Add New Partner", icon: "bi bi-person-fill-add", link: "#" },
+    { label: "Request E-Money", icon: "bi bi-wallet2", link: "#" },
+    { label: "Transfer E-Money", icon: "bi bi-wallet2", link: "#" },
+    { label: "Replace E-Money", icon: "bi bi-wallet2", link: "#" },
+    { label: "Add New Course", icon: "bi bi-card-list", link: "#" },
+    { label: "My Courses", icon: "bi bi-card-list", link: "#" },
+  ];
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header toggleSidebar={toggleSidebar} isOpen={isOpen} />
+      <div className="d-flex">
+        <Sidebar items={sidebarItems} isOpen={isOpen} />
+        <div className="p-3 w-100 add-partner">
+          <AddPartner />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

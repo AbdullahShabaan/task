@@ -1,0 +1,24 @@
+.circleBackground {
+  background-color: #ddd;
+}
+.circleBackgroundActive {
+  background-color: #084b93 !important;
+}
+
+.stepperBar {
+  width: 2px;
+  height: 240px;
+  background: #ddd;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.stepperCircle {
+  background: #ddd;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+}
+.stepperTitle {
+  opacity: 0.8;
+  margin-top: 37px;
+}

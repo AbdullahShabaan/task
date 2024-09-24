@@ -1,0 +1,15 @@
+.sideBar {
+  background-color: #3a444d;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+.sideBarLinks {
+  background-color: #2e393d;
+}
+.sideBarItems {
+  font-size: 11px;
+  opacity: 0.5;
+}
+.sideBarToggle {
+  font-size: 11px;
+}
